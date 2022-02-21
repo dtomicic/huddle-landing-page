@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbarBanner {
+  background-image: url("/assets/images/bg-hero-mobile.svg");
+  background-size: cover;
+  width: 100%;
+}
+
+.navbarBanner__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.25rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.navbarBanner__navigationLogo {
+  width: 40%;
+}
+
+.navbarBanner__navigationLogoImage {
+  width: 100%;
+  max-width: 8.875rem;
+}
+
+.navbarBanner__navigationSignUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  border-radius: 6.25rem;
+  width: 35%;
+  padding: 0.4375rem;
+  font-family: "Poppins";
+  font-size: 0.75rem;
+  -webkit-box-shadow: 0 0 0.625rem 0 rgba(128, 128, 128, 0.432);
+          box-shadow: 0 0 0.625rem 0 rgba(128, 128, 128, 0.432);
+  max-width: 7.8125rem;
+}
+
+.navbarBanner__navigationSignUpText {
+  font-weight: 600;
+}
+
+.navbarBanner__navigationSignUp:hover {
+  color: gray;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.navbarBanner__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 6.25rem;
+}
+
+.navbarBanner__bannerDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  max-width: 23.4375rem;
+}
+
+.navbarBanner__bannerDescriptionHeader {
+  font-family: "Poppins";
+  font-size: 1.5625rem;
+  margin-bottom: 1.875rem;
+}
+
+.navbarBanner__bannerDescriptionParagraph {
+  font-family: "Open Sans";
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+}
+
+.navbarBanner__bannerDescriptionStartBtn {
+  background-color: #ff52bf;
+  width: 86%;
+  padding: 1.0625rem;
+  border-radius: 6.25rem;
+  font-family: "Poppins";
+  color: white;
+  font-size: 0.875rem;
+  margin-bottom: 4.0625rem;
+  text-align: center;
+}
+
+.navbarBanner__bannerDescriptionStartBtn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.navbarBanner__bannerImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1.875rem;
+}
+
+.navbarBanner__bannerImageIllustration {
+  width: 100%;
+  max-width: 23.4375rem;
+}
+
+@media (min-width: 1440px) {
+  .navbarBanner {
+    background-image: url(/assets/images/bg-hero-desktop.svg);
+  }
+  .navbarBanner__navigation {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  .navbarBanner__navigationLogoImage {
+    max-width: 12.5rem;
+  }
+  .navbarBanner__navigationSignUp {
+    font-size: 0.75rem;
+    padding: 0.4375rem;
+    max-width: 12.5rem;
+  }
+  .navbarBanner__banner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navbarBanner__bannerDescription {
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 30%;
+    margin-top: 6.25rem;
+  }
+  .navbarBanner__bannerDescriptionHeader {
+    width: 90%;
+  }
+  .navbarBanner__bannerDescriptionStartBtn {
+    margin: 0;
+    width: 70%;
+  }
+  .navbarBanner__bannerImage {
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 3.75rem;
+  }
+  .navbarBanner__bannerImageIllustration {
+    max-width: 50rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
