@@ -1,0 +1,92 @@
+.cardSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: toRem(50);
+  width: 100%;
+  margin-top: toRem(30);
+  background-color: rgb(254, 254, 254);
+  margin-bottom: toRem(100);
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    border-radius: toRem(15);
+    box-shadow: 0 0 toRem(10) 0 rgba(128, 128, 128, 0.432);
+    max-width: toRem(338);
+
+    &Image {
+      display: flex;
+      justify-content: center;
+      margin-top: toRem(70);
+      margin-bottom: toRem(50);
+
+      &Illustration {
+        width: 60%;
+      }
+    }
+
+    &Text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 70%;
+      margin-bottom: toRem(30);
+
+      &Header {
+        font-family: $headingFont;
+        color: $darkCyan;
+        margin-bottom: toRem(20);
+      }
+
+      &Paragraph {
+        font-family: $bodyFont;
+        font-weight: 400;
+        color: $grayBlue;
+        font-size: toRem(13);
+      }
+    }
+  }
+}
+
+@media (min-width: $break-desktop) {
+  .cardSection__card {
+    max-width: toRem(1300);
+    flex-direction: row;
+
+    &Image {
+      order: 2;
+      width: 50%;
+
+      &.reverse {
+        order: 1;
+      }
+    }
+
+    &Text {
+      width: 50%;
+      align-items: flex-start;
+      text-align: left;
+      margin-left: toRem(100);
+
+      &Header {
+        font-size: toRem(30);
+      }
+
+      &Paragraph {
+        font-size: toRem(18);
+        width: 70%;
+      }
+
+      &.reverse {
+        order: 2;
+      }
+    }
+  }
+}
