@@ -27,7 +27,7 @@
       border-radius: toRem(100);
       width: 35%;
       padding: toRem(7);
-      font-family: $poppins;
+      font-family: $headingFont;
       font-size: toRem(12);
       box-shadow: 0 0 toRem(10) 0 rgba(128, 128, 128, 0.432);
       max-width: toRem(125);
@@ -62,13 +62,13 @@
 
 
       &Header {
-        font-family: $poppins;
+        font-family: $headingFont;
         font-size: toRem(25);
         margin-bottom: toRem(30);
       }
 
       &Paragraph {
-        font-family: $os;
+        font-family: $bodyFont;
         font-size: toRem(18);
         margin-bottom: toRem(40);
       }
@@ -78,7 +78,7 @@
         width: 86%;
         padding: toRem(17);
         border-radius: toRem(100);
-        font-family: $poppins;
+        font-family: $headingFont;
         color: white;
         font-size: toRem(14);
         margin-bottom: toRem(65);
