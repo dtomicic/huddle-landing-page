@@ -1,0 +1,163 @@
+.navbarBanner {
+  background-image: url('/assets/images/bg-hero-mobile.svg');
+  background-size: cover;
+  width: 100%;
+
+  &__navigation {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: toRem(20);
+    padding-left: toRem(10);
+    padding-right: toRem(10);
+
+    &Logo {
+      width: 40%;
+
+      &Image {
+        width: 100%;
+        max-width: toRem(142);
+      }
+    }
+
+    &SignUp {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      border-radius: toRem(100);
+      width: 35%;
+      padding: toRem(7);
+      font-family: $headingFont;
+      font-size: toRem(12);
+      box-shadow: 0 0 toRem(10) 0 rgba(128, 128, 128, 0.432);
+      max-width: toRem(125);
+
+      &Text {
+        font-weight: 600;
+      }
+
+      &:hover {
+        color: gray;
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: ease-in-out 0.3s;
+      }
+    }
+  }
+
+  &__banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: toRem(100);
+
+    &Description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      width: 90%;
+      text-align: center;
+      max-width: toRem(375);
+
+
+      &Header {
+        font-family: $headingFont;
+        font-size: toRem(25);
+        margin-bottom: toRem(30);
+      }
+
+      &Paragraph {
+        font-family: $bodyFont;
+        font-size: toRem(18);
+        margin-bottom: toRem(40);
+      }
+
+      &StartBtn {
+        background-color: $pink;
+        width: 86%;
+        padding: toRem(17);
+        border-radius: toRem(100);
+        font-family: $headingFont;
+        color: white;
+        font-size: toRem(14);
+        margin-bottom: toRem(65);
+        text-align: center;
+
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+          opacity: 0.7;
+          transition: ease-in-out 0.3s;
+        }
+      }
+    }
+
+    &Image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: toRem(30);
+
+
+      &Illustration {
+        width: 100%;
+        max-width: toRem(375);
+      }
+    }
+  }
+}
+
+@media (min-width: $break-desktop) {
+
+  .navbarBanner {
+    background-image: url(/assets/images/bg-hero-desktop.svg);
+
+    &__navigation {
+      padding-left: toRem(60);
+      padding-right: toRem(60);
+  
+      &LogoImage {
+        max-width: toRem(200);
+      }
+  
+      &SignUp {
+        font-size: toRem(12);
+        padding: toRem(7);
+        max-width: toRem(200);
+      }
+    }
+
+    &__banner {
+      flex-direction: row;
+
+      &Description {
+        text-align: left;
+        align-items: flex-start;
+        width: 30%;
+        margin-top: toRem(100);
+
+        &Header {
+          width: 90%;
+        }
+
+        &StartBtn {
+          margin: 0;
+          width: 70%;
+        }
+      }
+
+      &Image {
+        width: 60%;
+        margin-right: 0;
+        margin-bottom: toRem(60);
+
+        &Illustration {
+          max-width: toRem(800);
+        }
+      }
+    }
+  }
+}
