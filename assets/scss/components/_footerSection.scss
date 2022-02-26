@@ -1,0 +1,148 @@
+.footerSection {
+  background-color: $darkCyan;
+  display: flex;
+  flex-direction: column;
+  color: $paleCyan;
+  font-family: $bodyFont;
+  font-weight: 400;
+
+  &__contactInfo {
+    width: 85%;
+    margin-left: toRem(20);
+    margin-top: toRem(60);
+
+    &Logo {
+      filter: invert(82%) sepia(59%) saturate(1%) hue-rotate(70deg) brightness(108%) contrast(101%);
+      width: 50%;
+      margin-top: toRem(80);
+      margin-bottom: toRem(20);
+      max-width: toRem(160);
+    }
+
+    &Item {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      gap: toRem(25);
+      margin-bottom: toRem(40);
+      max-width: toRem(319);
+
+      &.different {
+        align-items: flex-start;
+      }
+
+      &Picture.lowered {
+        margin-top: toRem(8);
+      }
+    }
+  }
+
+  &__aboutUs {
+    margin-left: toRem(20);
+
+    &Link {
+      text-decoration: none;
+      color: $paleCyan;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    &Header {
+      font-weight: 400;
+      margin-bottom: toRem(15);
+      font-size: toRem(17);
+    }
+  }
+
+  &__career {
+    margin-left: toRem(20);
+    margin-bottom: toRem(60);
+
+    &Link {
+      text-decoration: none;
+      color: $paleCyan;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    &Header {
+      font-weight: 400;
+      margin-bottom: toRem(15);
+      font-size: toRem(17);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: toRem(15);
+    margin-bottom: toRem(40);
+
+    &Icon:hover {
+      color: $pink;
+      cursor: pointer;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: toRem(40);
+
+    &Header {
+      font-weight: 400;
+      color: $paleCyan;
+      font-size: toRem(11);
+    }
+  }
+}
+
+@media (min-width: $break-desktop) {
+  .footerSection {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+    &__menuItems {
+      display: flex;
+      width: 60%;
+      align-items: baseline;
+      gap: toRem(130);
+      margin-top: toRem(120)
+    }
+
+    &__contactInfo {
+      width: 40%;
+
+      &Item {
+        max-width: toRem(420);
+      }
+
+      &Logo {
+        margin-top: toRem(80);
+      }
+    }
+
+    &__socials {
+      margin-bottom: toRem(170);
+      justify-content: flex-start;
+    }
+
+    &__socialsCopyright {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__copyrightHeader {
+      font-size: toRem(13);
+    }
+  }
+}
