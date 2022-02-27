@@ -214,7 +214,6 @@
   width: 100%;
   margin-top: 1.875rem;
   background-color: #fefefe;
-  margin-bottom: 6.25rem;
 }
 
 .cardSection__card {
@@ -321,6 +320,241 @@
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+}
+
+.footerSection {
+  background-color: #00252e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ebfbff;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.footerSection__contactInfo {
+  width: 85%;
+  margin-left: 1.25rem;
+  margin-top: 3.75rem;
+}
+
+.footerSection__contactInfoLogo {
+  -webkit-filter: invert(82%) sepia(59%) saturate(1%) hue-rotate(70deg) brightness(108%) contrast(101%);
+          filter: invert(82%) sepia(59%) saturate(1%) hue-rotate(70deg) brightness(108%) contrast(101%);
+  width: 50%;
+  margin-top: 5rem;
+  margin-bottom: 1.25rem;
+  max-width: 10rem;
+}
+
+.footerSection__contactInfoItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5625rem;
+  margin-bottom: 2.5rem;
+  max-width: 19.9375rem;
+}
+
+.footerSection__contactInfoItem.different {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footerSection__contactInfoItemPicture.lowered {
+  margin-top: 0.5rem;
+}
+
+.footerSection__aboutUs {
+  margin-left: 1.25rem;
+}
+
+.footerSection__aboutUsLink {
+  text-decoration: none;
+  color: #ebfbff;
+}
+
+.footerSection__aboutUsLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footerSection__aboutUsHeader {
+  font-weight: 400;
+  margin-bottom: 0.9375rem;
+  font-size: 1.0625rem;
+}
+
+.footerSection__career {
+  margin-left: 1.25rem;
+  margin-bottom: 3.75rem;
+}
+
+.footerSection__careerLink {
+  text-decoration: none;
+  color: #ebfbff;
+}
+
+.footerSection__careerLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footerSection__careerHeader {
+  font-weight: 400;
+  margin-bottom: 0.9375rem;
+  font-size: 1.0625rem;
+}
+
+.footerSection__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.9375rem;
+  margin-bottom: 2.5rem;
+}
+
+.footerSection__socialsIcon:hover {
+  color: #ff52bf;
+  cursor: pointer;
+}
+
+.footerSection__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.footerSection__copyrightHeader {
+  font-weight: 400;
+  color: #ebfbff;
+  font-size: 0.6875rem;
+}
+
+@media (min-width: 1440px) {
+  .footerSection {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .footerSection__menuItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    gap: 8.125rem;
+    margin-top: 7.5rem;
+  }
+  .footerSection__contactInfo {
+    width: 40%;
+  }
+  .footerSection__contactInfoItem {
+    max-width: 26.25rem;
+  }
+  .footerSection__contactInfoLogo {
+    margin-top: 5rem;
+  }
+  .footerSection__socials {
+    margin-bottom: 10.625rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footerSection__socialsCopyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerSection__copyrightHeader {
+    font-size: 0.8125rem;
+  }
+}
+
+.cardSection__signupCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  background-color: white;
+  border-radius: 0.9375rem;
+  -webkit-box-shadow: 0 0 0.625rem 0 rgba(128, 128, 128, 0.432);
+          box-shadow: 0 0 0.625rem 0 rgba(128, 128, 128, 0.432);
+  max-width: 21.125rem;
+  padding: 1.875rem;
+  position: relative;
+  top: 70px;
+}
+
+.cardSection__signupCardHeader {
+  font-family: "Poppins";
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.cardSection__signupCardBtn {
+  background-color: #ff52bf;
+  width: 70%;
+  padding: 0.9375rem;
+  border-radius: 6.25rem;
+  font-family: "Poppins";
+  color: white;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.cardSection__signupCardBtn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+@media (min-width: 1440px) {
+  .cardSection__signupCard {
+    max-width: 31.25rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
