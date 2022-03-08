@@ -20,4 +20,4 @@ This project is part of Frontend Mentors course. It's a simple landing page with
 - SCSS
 
 ## Live preview
-[Click for live preview](https://vercel.com/dtomicic/huddle-landing-page/3miWm3FrXTWeDt3CeNSJJDe1zx5N)
+[Click for live preview](https://huddle-landing-page-lcg9a3k06-dtomicic.vercel.app/)
